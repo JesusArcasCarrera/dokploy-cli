@@ -1,0 +1,32 @@
+{
+  "name": "dokploy-cli",
+  "version": "0.1.0",
+  "description": "CLI para gestionar despliegues completos en Dokploy",
+  "type": "module",
+  "bin": {
+    "dokploy": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "tsx --test test/integration.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "cli-table3": "^0.6.5",
+    "commander": "^13.1.0",
+    "conf": "^13.1.0",
+    "ora": "^8.2.0",
+    "ws": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
