@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "CLI para gestionar despliegues completos en Dokploy",
   "type": "module",
+  "license": "MIT",
   "bin": {
     "dokploy": "./dist/index.js"
   },
